@@ -2,6 +2,10 @@
 
 - Let there be fantasy
 
+## Introduction [\[Link to Paper\]](https://arxiv.org/abs/2505.07705)
+
+Want your fictional characters to act logically? Why not codify their behavior?
+
 ## Fandom Benchmark
 
 We construct Fandom Benchmark, a large-scale, behavior-centric evaluation suite for role-playing agents, consisting of 5,141 scenes and 83 characters from six popular fictional universes (e.g., AGOT, JOJO, FMA). Each scene pairs a grounded narrative context with a reference character action, enabling precise evaluation using NLI-based scoring. The benchmark focuses on complex situational reasoning beyond dialogue, supporting the assessment of character logic.
