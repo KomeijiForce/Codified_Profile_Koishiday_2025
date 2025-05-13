@@ -8,6 +8,50 @@
 
 Codified Profiles turn character reasoning into executable functions, using structured control flow like `if-then-else` and condition queries (`check_condition`) to ensure consistent, interpretable, and updatable behavior across diverse scenes. Unlike prompt-only approaches that rely on the LLM's fragile implicit reasoning, codified profiles enable stable decision-making, controlled randomness, and strong performance - even with small models. Whether you're building story agents, simulation games, or interactive narratives, Codified Profiles offer a scalable and modular foundation for bringing characters to life with precision.
 
+For example, text profile
+```text
+**Taking actions unconsciously**
+As her actions are controlled entirely by her unconscious, Koishi's presence cannot be noticed by other beings unless she allows it,
+even while standing in plain view because she's closed her mind, or her Third Eye.
+Likewise, her older sister's ability to read minds has no effect on her, as she does not technically have a mind to read,
+which is why she said "my sister can't win against me."
+Even someone who manages to communicate with Koishi will forget about her after she leaves,
+unless they already knew of her as Satori's sister.
+```
+
+will be codified as
+
+```python
+def parse_by_scene(scene):
+    scene_statements = []
+
+    # 1. Is Koishi present in the scene?
+    if check_scene(scene, "Is Koishi present in the scene?"):
+        # 2. Does Koishi allow herself to be noticed?
+        if check_scene(scene, "Does Koishi allow herself to be noticed?"):
+            scene_statements.append("Koishi is noticed by others in the scene.")
+        else:
+            scene_statements.append("Koishi is not noticed by anyone, even if she is in plain sight.")
+
+        # 3. Does someone try to read Koishi's mind?
+        if check_scene(scene, "Does someone try to read Koishi's mind?"):
+            scene_statements.append("No one can read Koishi's mind; her mind is closed off.")
+
+        # 4. Does Koishi interact or communicate with someone?
+        if check_scene(scene, "Does Koishi interact or communicate with someone?"):
+            # 5. Does the person already know Koishi as Satori's sister?
+            if check_scene(scene, "Does the person already know Koishi as Satori's sister?"):
+                scene_statements.append("After Koishi leaves, the person remembers her because they know her as Satori's sister.")
+            else:
+                scene_statements.append("After Koishi leaves, the person forgets about her.")
+
+        # 6. Does Koishi take any actions?
+        if check_scene(scene, "Does Koishi take any actions?"):
+            scene_statements.append("Koishi's actions are unconscious and not planned.")
+
+    return scene_statements
+```
+
 ## Fandom Benchmark
 
 We construct Fandom Benchmark, a large-scale, behavior-centric evaluation suite for role-playing agents, consisting of 5,141 scenes and 83 characters from six popular fictional universes (e.g., AGOT, JOJO, FMA). Each scene pairs a grounded narrative context with a reference character action, enabling precise evaluation using NLI-based scoring. The benchmark focuses on complex situational reasoning beyond dialogue, supporting the assessment of character logic.
