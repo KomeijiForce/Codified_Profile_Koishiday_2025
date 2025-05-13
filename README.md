@@ -4,7 +4,9 @@
 
 ## Introduction [\[Link to Paper\]](https://arxiv.org/abs/2505.07705)
 
-Want your fictional characters to act logically? Why not codify their behavior?
+**Want your fictional characters to act logically? Why not codify their behavior?**
+
+Codified Profiles turn character reasoning into executable functions, using structured control flow like `if-then-else` and condition queries (`check_condition`) to ensure consistent, interpretable, and updatable behavior across diverse scenes. Unlike prompt-only approaches that rely on the LLM's fragile implicit reasoning, codified profiles enable stable decision-making, controlled randomness, and strong performance - even with small models. Whether you're building story agents, simulation games, or interactive narratives, Codified Profiles offer a scalable and modular foundation for bringing characters to life with precision.
 
 ## Fandom Benchmark
 
@@ -55,4 +57,14 @@ answer = [False, None, True][choice]
 
 print(answer)
 # True
+```
+
+## Citation
+```bibtex
+@article{codified_profile,
+  title={Codifying Character Logic in Role-Playing},
+  author={Peng, Letian and Shang, Jingbo},
+  journal={arXiv preprint arXiv:2505.07705},
+  year={2025}
+}
 ```
