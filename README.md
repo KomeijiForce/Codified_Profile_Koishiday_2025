@@ -61,6 +61,10 @@ We construct Fandom Benchmark, a large-scale, behavior-centric evaluation suite 
 
 The Fandom Benchmark used in our experiments can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Benchmark).
 
+### Codified Profiles
+
+The textual and codified profiles of characters in the Fandom benchmark can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles)
+
 ## Distilled Condition Checkers
 
 We also release the DeBERTa-V3 condition checkers distilled from GPT-4.1:
