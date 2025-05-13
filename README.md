@@ -52,6 +52,39 @@ def parse_by_scene(scene):
     return scene_statements
 ```
 
+### Why codified profile?
+
+Codified profiles provide persistent logic in role-playing, no longer relying on the model's implicit or explicit reasoning. This is good news for smaller role-playing models with weaker reasoning abilities, enabling 1B model to rival 8B model.
+
+![1747126387253](https://github.com/user-attachments/assets/4be4b8f3-1d4e-4562-9f0e-de9a8a7a2fa1)
+
+## Quick Start
+
+You can quickly start with the demo in `quick_start.py`. You first need to create a `constant.py` file and place `openai_key="your key"` into it. Then you can upload the textual profile `{character}.profile.txt` to `profiles/` and then modify the `character`, `scene`, and `question` inside `quick_start.py` to enact role-playing with codified profiles.
+
+The default setup is `llama-3.2-1b-instruct` for role-playing and the distilled `deberta-v3-base-check-scene` for condition checking, which enables a high-quality role-playing system on a **6G** GPU.
+
+The example of `Koishi` in `quick_start.py` will provide you output with
+
+```
+Koishi spots Cirno giggling mischievously as she freezes a line of unsuspecting frogs along the riverbank.
+----------------------------------------------------------------------------------------------------
+What's the next action of Koishi to response to the scene?
+----------------------------------------------------------------------------------------------------
+Koishi acts immediately on her impulse, regardless of social norms or consequences.
+Koishi behaves in a playful, childlike, and unpredictable manner.
+Koishi performs her urban legend in a playful, not truly menacing, manner.
+Koishi's presence goes unnoticed by others, even if she is in plain sight.
+Koishi's actions are guided entirely by her unconscious.
+Koishi is perceived as an 'imaginary friend' by the children, who will forget her as they grow up.
+The act of Koishi's action is difficult for others to perceive.
+Koishi does not read minds and may act oblivious to others' thoughts or intentions.
+Koishi is undetectable and forgotten by everyone present.
+Koishi makes them see illusions or confront their hidden weaknesses.
+----------------------------------------------------------------------------------------------------
+Koishi will then begin to dance around the frozen frogs, her movements playful and carefree, as if she's enjoying the absurdity of the situation.
+```
+
 ## Fandom Benchmark
 
 We construct Fandom Benchmark, a large-scale, behavior-centric evaluation suite for role-playing agents, consisting of 5,141 scenes and 83 characters from six popular fictional universes (e.g., AGOT, JOJO, FMA). Each scene pairs a grounded narrative context with a reference character action, enabling precise evaluation using NLI-based scoring. The benchmark focuses on complex situational reasoning beyond dialogue, supporting the assessment of character logic.
