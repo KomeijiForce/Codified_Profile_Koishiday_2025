@@ -2,6 +2,8 @@
 
 - Let there be fantasy
 
+💚 Koishi's Day Project 2024: [[Active Passive Constraint for Fine-gained Role-playing]](https://github.com/KomeijiForce/Active_Passive_Constraint_Koishiday_2024)
+
 ## Introduction [\[Link to Paper\]](https://arxiv.org/abs/2505.07705)
 
 **Want your fictional characters to act logically? Why not codify their behavior?**
