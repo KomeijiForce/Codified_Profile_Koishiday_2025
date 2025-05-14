@@ -97,6 +97,19 @@ The Fandom Benchmark used in our experiments can be accessed via [this link](htt
 
 The test cases from the full 8 seasons of AGOT for code evolving experiments can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Benchmark_Full_AGOT).
 
+### Benchmarking
+The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`
+
+```
+python benchmark.py \
+  --eval_engine "gpt-4.1" \
+  --llm_path "meta-llama/Llama-3.2-1B-Instruct" \
+  --classifier_path "KomeijiForce/deberta-v3-base-check-scene" \
+  --character "Nagato" \
+  --method "codified profile" \
+  --device_id "7"
+```
+
 ### Codified Profiles
 
 The textual and codified profiles of characters in the Fandom benchmark can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles).
