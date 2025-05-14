@@ -68,7 +68,7 @@ elif method == "codified profile":
 
 def check_scene(text, question):
 
-    if llm_path == classifier_path:
+    if llm_path != classifier_path:
     
         prompt = f"Scene: {text}\n\nQuestion: {question}\n\nDirectly answer only yes/no/unknown."
     
