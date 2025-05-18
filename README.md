@@ -110,6 +110,11 @@ python benchmark.py \
   --device_id "7"
 ```
 
+Other sets of codified:
+[Codification w/ Claude 3.7](KomeijiForce/Fandom_Codified_Profiles_Claude_3.7) (Best Performance on Average)
+
+[Codification w/ Randomness](KomeijiForce/Fandom_Codified_Profiles_with_Randomness) (With Explicit Randomness in control flow)
+
 ### Codified Profiles
 
 The textual and codified profiles of characters in the Fandom benchmark can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles).
