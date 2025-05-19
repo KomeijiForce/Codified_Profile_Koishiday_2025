@@ -111,9 +111,10 @@ python benchmark.py \
 ```
 
 Other sets of codified:
-[Codification w/ Claude 3.7](KomeijiForce/Fandom_Codified_Profiles_Claude_3.7) (Best Performance on Average)
 
-[Codification w/ Randomness](KomeijiForce/Fandom_Codified_Profiles_with_Randomness) (With Explicit Randomness in control flow)
+[Codification w/ Claude 3.7](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_Claude_3.7) (Best Performance on Average)
+
+[Codification w/ Randomness](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_with_Randomness) (With Explicit Randomness in control flow)
 
 ### Codified Profiles
 
