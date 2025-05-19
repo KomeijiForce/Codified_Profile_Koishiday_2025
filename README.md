@@ -58,7 +58,19 @@ def parse_by_scene(scene):
 
 Codified profiles provide persistent logic in role-playing, no longer relying on the model's implicit or explicit reasoning. This is good news for smaller role-playing models with weaker reasoning abilities, enabling 1B model to rival 8B model.
 
-![1747126387253](https://github.com/user-attachments/assets/4be4b8f3-1d4e-4562-9f0e-de9a8a7a2fa1)
+| Artifact              | Haruhi | K-On! | JOJO  | FMA   | AGOT  | ATLA  | Average |
+|-----------------------|--------|-------|-------|-------|-------|--------|---------|
+| **Main**              |        |       |       |       |       |        |         |
+| 1B + Text             | 51.60  | 59.73 | 52.76 | 59.11 | 54.25 | 58.54  | 56.00   |
+| 1B + Code             | 55.83  | 60.80 | 54.28 | 60.32 | 58.96 | 60.37  | 58.43   |
+| 1B + Code + Distill   | 62.25  | 61.40 | 55.01 | 59.96 | 60.09 | 61.97  | **60.21** |
+| 8B + Text             | 70.53  | 68.47 | 60.64 | 68.02 | 61.52 | 66.70  | 65.98   |
+| **Minor**             |        |       |       |       |       |        |         |
+| 1B + Text              | N/A | 63.17  | 61.98 | 52.46 | 58.04 | 61.36 | 59.40   |
+| 1B + Code              | N/A | 64.98  | 60.21 | 60.68 | 60.13 | 66.97 | 62.59   |
+| 1B + Code + Distill    | N/A | 66.29  | 61.15 | 61.29 | 62.74 | 69.56 | **64.25**   |
+| 8B + Text              | N/A | 65.88  | 64.70 | 65.83 | 66.21 | 65.88 | 65.70   |
+
 
 ## Quick Start
 
@@ -115,6 +127,17 @@ Other sets of codified:
 [Codification w/ Claude 3.7](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_Claude_3.7) (Best Performance on Average)
 
 [Codification w/ Randomness](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_with_Randomness) (With Explicit Randomness in control flow)
+
+| Artifact            | Haruhi | K-On! | JOJO  | FMA   | AGOT  | ATLA  | Average |
+|---------------------|--------|-------|-------|-------|-------|--------|---------|
+| **Main**            |        |       |       |       |       |        |         |
+| gpt-4.1-mini        | 73.33  | 68.58 | 62.71 | 68.07 | 67.03 | 68.54  | 68.04   |
+| gpt-4.1             | 72.14  | 69.23 | 63.92 | 69.60 | 67.51 | 67.90  | 68.38   |
+| claude-3.7-sonet    | 76.86  | 68.53 | 63.35 | 70.82 | 68.69 | 68.73  | **69.50** |
+| **Minor**           |        |       |       |       |       |        |         |
+| gpt-4.1-mini        | N/A    | 71.65 | 64.66 | 70.35 | 69.77 | 70.43  | 69.37   |
+| gpt-4.1             | N/A    | 68.59 | 70.06 | 68.21 | 70.51 | 71.95  | 69.87   |
+| claude-3.7-sonet    | N/A    | 75.05 | 67.05 | 67.04 | 73.79 | 69.25  | **70.44** |
 
 ### Codified Profiles
 
