@@ -76,6 +76,8 @@ Codified profiles provide persistent logic in role-playing, no longer relying on
 
 You can quickly start with the demo in `quick_start.py`. You first need to create a `constant.py` file and place `openai_key="your key"` into it. Then you can upload the textual profile `{character}.profile.txt` to `profiles/` and then modify the `character`, `scene`, and `question` inside `quick_start.py` to enact role-playing with codified profiles. You can also pass `random=True` to `codify` to enable controllable randomness in codified profiles.
 
+**(OpenAI API is only required for codification and benchmarking, you can use pre-codified profiles for role-playing in [[Huggingface](https://huggingface.co/KomeijiForce)])**
+
 The default setup is `llama-3.2-1b-instruct` for role-playing and the distilled `deberta-v3-base-check-scene` for condition checking, which enables a high-quality role-playing system on a **6G** GPU.
 
 The example of `Koishi` in `quick_start.py` will provide you output with
