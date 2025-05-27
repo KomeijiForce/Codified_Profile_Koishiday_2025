@@ -68,8 +68,8 @@ Codified profiles provide persistent logic in role-playing, no longer relying on
 | **Minor**             |        |       |       |       |       |        |         |
 | 1B + Text              | N/A | 63.17  | 61.98 | 52.46 | 58.04 | 61.36 | 59.40   |
 | 1B + Code              | N/A | 64.98  | 60.21 | 60.68 | 60.13 | 66.97 | 62.59   |
-| 1B + Code + Distill    | N/A | 66.29  | 61.15 | 61.29 | 62.74 | 69.56 | **64.25**   |
-| 8B + Text              | N/A | 65.88  | 64.70 | 65.83 | 66.21 | 65.88 | 65.70   |
+| 1B + Code + Distill    | N/A | 66.29  | 61.15 | 61.29 | 62.74 | 69.56 | 64.25   |
+| 8B + Text              | N/A | 65.88  | 64.70 | 65.83 | 66.21 | 65.88 | **65.70**   |
 
 
 ## Quick Start
