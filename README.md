@@ -110,7 +110,7 @@ The Fandom Benchmark used in our experiments can be accessed via [this link](htt
 The test cases from the full 8 seasons of AGOT for code evolving experiments can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Benchmark_Full_AGOT).
 
 ### Benchmarking
-The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`
+The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`. When `llm_path` and `classifier_path` are set to the same, the role-playing LLM will also do the classification.
 
 ```
 python benchmark.py \
@@ -124,7 +124,9 @@ python benchmark.py \
 
 Other sets of codified:
 
-[Codification w/ Claude 3.7](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_Claude_3.7) (Best Performance on Average)
+[Codification w/ Claude 3.7](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_Claude_3.7)
+
+[Codification w/ Claude 4.0_sonnet](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_Claude_4.0_sonnet) (Best Performance on Average)
 
 [Codification w/ Randomness](https://huggingface.co/datasets/KomeijiForce/Fandom_Codified_Profiles_with_Randomness) (With Explicit Randomness in control flow)
 
@@ -140,6 +142,8 @@ Other sets of codified:
 | gpt-4.1             | N/A    | 68.59 | 70.06 | 68.21 | 70.51 | 71.95  | 69.87   |
 | claude-3.7-sonnet    | N/A    | 75.05 | 67.05 | 67.04 | 73.79 | 69.25  | 70.44 |
 | claude-4.0-sonnet    | N/A    | 71.79 | 67.66 | 70.94 | 74.63 | 73.72  | **71.75** |
+
+To reproduce the results in the table, set both `llm_path` and `classifier_path` to `meta-llama/Llama-3.1-8B-Instruct`.
 
 ### Codified Profiles
 
