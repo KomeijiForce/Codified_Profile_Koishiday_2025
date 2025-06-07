@@ -111,6 +111,24 @@ The Fandom Benchmark used in our experiments can be accessed via [this link](htt
 
 The test cases from the full 8 seasons of AGOT for code evolving experiments can be accessed via [this link](https://huggingface.co/datasets/KomeijiForce/Fandom_Benchmark_Full_AGOT).
 
+### We are extending Fandom Benchmark to more artifacts
+
+[[Extended Benchmark]](https://huggingface.co/datasets/KomeijiForce/Fandom_Benchmark_Extended) [[Codified Profiles]](KomeijiForce/Fandom_Extended_Codified_Profiles_Claude_4.0)
+
+
+| Artifact              | Spy x Family |
+|-----------------------|--------|
+| **Main**              |        |
+| 1B + Text             | 60.62  | 
+| 1B + Code + Distill   | **63.20**  | 
+| 8B + Text             | 69.78  | 
+| 8B + Code + Distill   | **70.69**  | 
+| **Minor**             |        | 
+| 1B + Text             | 65.93  | 
+| 1B + Code + Distill   | **67.99**  | 
+| 8B + Text             | 70.16  | 
+| 8B + Code + Distill   | **72.33**  | 
+
 ### Benchmarking
 The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`. When `llm_path` and `classifier_path` are set to the same, the role-playing LLM will also do the classification.
 
