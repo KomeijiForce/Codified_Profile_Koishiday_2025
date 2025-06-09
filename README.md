@@ -129,6 +129,33 @@ The test cases from the full 8 seasons of AGOT for code evolving experiments can
 | 8B + Text             | 70.16    |  66.68    |  69.03    |
 | 8B + Code + Distill   | **72.33**|**68.45**  |**71.29**  |
 
+### Bandori (BanG Dream) Conversational Benchmark
+
+[[Bandori Benchmark]](KomeijiForce/Fandom_Benchmark_Bandori) [[Codified Bandori Profiles]](KomeijiForce/Fandom_Benchmark_Bandori)
+
+The scene in the **Bandori** benchmark is different from previous ones because the scene and response are in conversational formats like:
+
+```
+Arisa: I know you're on a roll right now Kasumi, but just calm down...
+Kasumi: I can't! I can't calm down!
+Arisa: I'm saying you're losing it, Kasumi.
+Saaya: We know exactly what you mean, Kasumi.
+Kasumi: Right?!
+Rimi: Of course. We all felt it, singing together like that♪
+Kasumi: Yay! I'm so glad you understand, Rimi-rin♪
+Tae: Sharing moments like this is what's really important.
+Kasumi: Sharing...! I wanna share this feeling with everybody! This sparkling, heart-pounding feeling!
+```
+
+| Band           | 🎸 Poppin'Party | 🌹 Roselia | 🎀 Pastel*Palettes | 🔥 Afterglow |
+|----------------|----------------|------------|--------------------|--------------|
+| 8B + Text      | 70.10          | 70.95      | 70.62              | 71.00        | 
+| 8B + Code + Distill| **70.17**      |**71.90**  |**73.67**        | **71.72**   |
+|                | 🎪 **Hello, Happy World!** | 🦋 **Morfonica** | ⚡ **RAISE A SUILEN** | 🧭 **MyGO!!!!!** |
+| 8B + Text      | 74.10                  | 72.27        | 68.16            | 64.34        |
+| 8B + Code + Distill| **75.94**         | **73.18**    | **70.67**     | **66.26**        |
+
+
 ### Benchmarking
 The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`. When `llm_path` and `classifier_path` are set to the same, the role-playing LLM will also do the classification.
 
