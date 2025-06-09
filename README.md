@@ -116,18 +116,18 @@ The test cases from the full 8 seasons of AGOT for code evolving experiments can
 [[Extended Benchmark]](https://huggingface.co/datasets/KomeijiForce/Fandom_Benchmark_Extended) [[Codified Profiles]](KomeijiForce/Fandom_Extended_Codified_Profiles_Claude_4.0)
 
 
-| Artifact              | Spy x Family | Jujutsu Kaisen |
-|-----------------------|----------|-----------|
-| **Main**              |          |           |
-| 1B + Text             | 60.62    |  60.34    |
-| 1B + Code + Distill   | **63.20**|**63.92**  |
-| 8B + Text             | 69.78    |  64.86    |
-| 8B + Code + Distill   | **70.69**|**65.69**  |
-| **Minor**             |          |           |
-| 1B + Text             | 65.93    |  58.19    |
-| 1B + Code + Distill   | **67.99**|**60.42**  |
-| 8B + Text             | 70.16    |  66.68    |
-| 8B + Code + Distill   | **72.33**|**68.45**  |
+| Artifact              | Spy x Family | Jujutsu Kaisen | Little Witch Academia |
+|-----------------------|----------|-----------|-----------|
+| **Main**              |          |           |           |
+| 1B + Text             | 60.62    |  60.34    |  64.35    |
+| 1B + Code + Distill   | **63.20**|**63.92**  |**66.81**  |
+| 8B + Text             | 69.78    |  64.86    |  68.19    |
+| 8B + Code + Distill   | **70.69**|**65.69**  |**70.31**  |
+| **Minor**             |          |           |           |
+| 1B + Text             | 65.93    |  58.19    |  64.71    |
+| 1B + Code + Distill   | **67.99**|**60.42**  |**68.28**  |
+| 8B + Text             | 70.16    |  66.68    |  69.03    |
+| 8B + Code + Distill   | **72.33**|**68.45**  |**71.29**  |
 
 ### Benchmarking
 The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`. When `llm_path` and `classifier_path` are set to the same, the role-playing LLM will also do the classification.
