@@ -156,6 +156,7 @@ Kasumi: Sharing...! I wanna share this feeling with everybody! This sparkling, h
 | 8B + Code + Distill| **75.94**         | **73.18**    | **70.67**     | **66.26**        |
 
 Full results per character: [[Bandori Character Performance]](https://github.com/KomeijiForce/Codified_Profile_Koishiday_2025/blob/main/appendix/bandori_result.md)
+The paired scene checker for conversational scenes: [[DeBERTa-V3-Base-Conversational-Scene-Checker]](https://huggingface.co/KomeijiForce/deberta-v3-base-check-conversational-scene)
 
 ### Benchmarking
 The following script can be used to benchmark characters from the Fandom Benchmark, character names can be found in `all_characters.json`. The method name should be inside `["vanilla", "textual profile", "codified rag", "codified profile"]`. When `llm_path` and `classifier_path` are set to the same, the role-playing LLM will also do the classification.
