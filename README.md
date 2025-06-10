@@ -156,6 +156,7 @@ Kasumi: Sharing...! I wanna share this feeling with everybody! This sparkling, h
 | 8B + Code + Distill| **75.94**         | **73.18**    | **70.67**     | **66.26**        |
 
 Full results per character: [[Bandori Character Performance]](https://github.com/KomeijiForce/Codified_Profile_Koishiday_2025/blob/main/appendix/bandori_result.md)
+
 The paired scene checker for conversational scenes: [[DeBERTa-V3-Base-Conversational-Scene-Checker]](https://huggingface.co/KomeijiForce/deberta-v3-base-check-conversational-scene)
 
 ### Benchmarking
