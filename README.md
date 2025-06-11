@@ -56,7 +56,16 @@ def parse_by_scene(scene):
 
 ### Why codified profile?
 
-Codified profiles provide persistent logic in role-playing, no longer relying on the model's implicit or explicit reasoning. This is good news for smaller role-playing models with weaker reasoning abilities, enabling 1B model to rival 8B model.
+Codified profiles provide persistent logic in role-playing, no longer relying on the model's implicit or explicit reasoning. This is good news for smaller role-playing models with weaker reasoning abilities, enabling 1B model to rival 8B model. Codified profiles can even support the SOTA GPT-4.1 model with a very small (0.3B) distilled discriminator as the scene checker.
+
+| Artifact                         | Haruhi | K-On! | JOJO  | FMA   | AGOT  | ATLA  | Average |
+|----------------------------------|--------|-------|-------|-------|-------|--------|---------|
+| **Main**                         |        |       |       |       |       |        |         |
+| GPT-4.1 + Text                   | 81.17  | 80.04 | 75.94 | 80.47 | 85.85 | 83.14  | 81.10   |
+| GPT-4.1 + Code + Distill (0.3B)  | 83.10  | 80.01 | 75.96 | 83.21 | 86.50 | 82.96  | **81.96**|
+| **Minor**                        |        |       |       |       |       |        |         |
+| GPT-4.1 + Text                   | N/A    | 81.31 | 78.14 | 83.33 | 86.96 | 86.34  | 83.22 |
+| GPT-4.1 + Code + Distill (0.3B)  | N/A    | 80.89 | 80.07 | 86.17 | 88.64 | 84.96  | **84.15**|
 
 | Artifact              | Haruhi | K-On! | JOJO  | FMA   | AGOT  | ATLA  | Average |
 |-----------------------|--------|-------|-------|-------|-------|--------|---------|
