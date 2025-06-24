@@ -54,6 +54,9 @@ def parse_by_scene(scene):
     return scene_statements
 ```
 
+![image](https://github.com/user-attachments/assets/5eaf6959-72ed-4a87-b00a-d64b172db66c)
+
+
 ### Why codified profile?
 
 Codified profiles provide persistent logic in role-playing, no longer relying on the model's implicit or explicit reasoning. This is good news for smaller role-playing models with weaker reasoning abilities, enabling 1B model to rival 8B model. Codified profiles can even support the SOTA GPT-4.1 model with a very small (0.3B) distilled discriminator as the scene checker.
