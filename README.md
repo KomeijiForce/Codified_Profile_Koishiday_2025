@@ -4,6 +4,8 @@
 
 💚 Koishi's Day Project 2024: [[Active Passive Constraint for Fine-gained Role-playing]](https://github.com/KomeijiForce/Active_Passive_Constraint_Koishiday_2024)
 
+![image](https://github.com/user-attachments/assets/5eaf6959-72ed-4a87-b00a-d64b172db66c)
+
 ## Introduction [\[Link to Paper\]](https://arxiv.org/abs/2505.07705)
 
 **Want your fictional characters to act logically? Why not codify their behavior?**
@@ -53,8 +55,6 @@ def parse_by_scene(scene):
 
     return scene_statements
 ```
-
-![image](https://github.com/user-attachments/assets/5eaf6959-72ed-4a87-b00a-d64b172db66c)
 
 
 ### Why codified profile?
