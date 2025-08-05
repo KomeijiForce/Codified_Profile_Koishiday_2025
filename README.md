@@ -159,7 +159,7 @@ Tae: Sharing moments like this is what's really important.
 Kasumi: Sharing...! I wanna share this feeling with everybody! This sparkling, heart-pounding feeling!
 ```
 
-| Band           | 🎸 Poppin'Party | 🌹 Roselia | 🎀 Pastel*Palettes | 🔥 Afterglow |
+| Band           |⭐ Poppin'Party | 🌹 Roselia | 🎀 Pastel*Palettes | 🔥 Afterglow |
 |----------------|----------------|------------|--------------------|--------------|
 | 8B + Text      | 70.10          | 70.95      | 70.62              | 71.00        | 
 | 8B + Code + Distill| **70.17**      |**71.90**  |**73.67**        | **71.72**   |
