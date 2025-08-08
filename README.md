@@ -1,6 +1,6 @@
 # [Koishi's Day 2025](https://danbooru.donmai.us/wiki_pages/koishi_day): Codifying Character Logic in Role-Playing
 
-- Let there be fantasy
+<img height="256" alt="KomeijiForce_Logo" src="https://github.com/user-attachments/assets/3b931cd1-8ce9-4e89-8852-f20d288cad1d" /> - Let there be fantasy
 
 💚 Koishi's Day Project 2024: [[Active Passive Constraint for Fine-gained Role-playing]](https://github.com/KomeijiForce/Active_Passive_Constraint_Koishiday_2024)
 
